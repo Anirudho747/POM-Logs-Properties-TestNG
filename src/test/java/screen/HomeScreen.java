@@ -6,29 +6,30 @@ import org.openqa.selenium.support.FindBy;
 public class HomeScreen {
 	
 	@FindBy(xpath = "//a[@href='?pwaLob=wizard-flight-pwa']")
-	protected WebElement flights;
+	public WebElement flights;
 	
 	@FindBy(xpath = "//a[@href='?pwaLob=wizard-hotel-pwa-v2']")
-	protected WebElement hotels;
+	public WebElement hotels;
 
 	@FindBy(xpath = "//button[@aria-label='Going to']")
-	protected WebElement destination;
+	public WebElement destination;
 	
 	@FindBy(xpath = "//input[@id='location-field-destination']")
-	protected WebElement cityName;
+	public WebElement cityName;
 	
 	@FindBy(xpath = "//button[contains(@aria-label,'Check-in')]")
-	protected WebElement check_In;
+	public WebElement check_In;
 	
 	@FindBy(xpath = "//button[contains(@aria-label,'Check-out')]")
-	protected WebElement check_Out;
+	public WebElement check_Out;
 	
 	@FindBy(xpath = "//button[contains(@aria-label,'Check-out')]")
-	protected WebElement Save_Btn;
+	public WebElement save_Btn;
 	
 	@FindBy(xpath = "//button[@data-stid='apply-date-picker']")
-	protected WebElement Confirm_Date;
+	public WebElement confirm_Date;
 	
 	@FindBy(xpath = "//button[@data-testid='submit-button']")
-	protected WebElement Search_Rooms;
+	public WebElement search_Rooms;
+	
 }
